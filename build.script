@@ -1,0 +1,9 @@
+# Simple build script example
+# Format: [target]: [dependencies...]
+#         [TAB][command]
+
+build: hello.cpp
+    g++ -o hello hello.cpp
+
+clean:
+    rm -f hello
