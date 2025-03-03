@@ -1,6 +1,6 @@
-.phony: all clean test
+.PHONY: all clean tests
 
-all: build_dir builder
+all: build_dir builder tests
 
 build_dir:
 	mkdir -p build
@@ -10,6 +10,7 @@ builder: builder.cpp
 
 clean:
 	rm -rf build
+	$(MAKE) -C tests clean
 
-test:
-	./build/builder
+tests:
+	$(MAKE) -C tests
