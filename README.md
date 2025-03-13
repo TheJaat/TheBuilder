@@ -8,6 +8,6 @@ Before you begin, ensure that your system has the following tools installed:
 
 ### Building
 
-'''bash
+```bash
 make all
-'''
+```
